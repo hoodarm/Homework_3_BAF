@@ -5,7 +5,9 @@ public class Main
 
     public static void main(String[] args)
     {
-        int A = 237;
+        //Method 1
+
+        int A = 236;
         int B = 354345;
 
         String string_A = Integer.toString(A);
@@ -22,5 +24,23 @@ public class Main
         {
             System.out.println(false);
         }
+
+        //Method 2
+
+        if (A%10==B%10)
+        {
+            System.out.println(true);
+        }
+        else
+            System.out.println(false);
+
+        //Method 3
+
+        if ((A-B)%10==0)
+        {
+            System.out.println(true);
+        }
+        else
+            System.out.println(false);
     }
 }
